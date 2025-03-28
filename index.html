@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .profile-card {
+            width: 320px;
+            background: #fff;
+            border: 3px solid #000;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            position: relative;
+        }
+
+        .profile-card img {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: 1px solid #000;
+            object-fit: cover;
+        }
+        .profile-card p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        .profile-card p strong {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ABC Colleges</h1>
+    <h2>Library Users</h2>
+
+    <div class="container" id="studentContainer"></div>
+
+    <script>
+        function loadXML() {
+            fetch('kurt_pena.xml')
+                .then(response => response.ok ? response.text() : Promise.reject("Failed to load XML"))
+                .then(xmlText => displayData(new DOMParser().parseFromString(xmlText, "text/xml")))
+                .catch(error => console.error("Error loading XML:", error));
+        }
+        
+        function displayData(xml) {
+            let container = document.getElementById("studentContainer");
+            let profiles = xml.getElementsByTagName("profile");
+
+            for (let i = 0; i < profiles.length; i++) {
+                let name = profiles[i].getElementsByTagName("name")[0].textContent;
+                let course = profiles[i].getElementsByTagName("course")[0].textContent;
+                let level = profiles[i].getElementsByTagName("level")[0].textContent;
+                let adviser = profiles[i].getElementsByTagName("adviser")[0].textContent;
+                let year = profiles[i].getElementsByTagName("year")[0].textContent;
+                let picture = profiles[i].getElementsByTagName("picture")[0].textContent;
+
+                let profileCard = document.createElement("div");
+                profileCard.classList.add("profile-card");
+                profileCard.innerHTML = `
+                    <img src="${picture}" alt="Profile Picture">
+                    <p><strong>Name:</strong> ${name}</p>
+                    <p><strong>Course:</strong> ${course}</p>
+                    <p><strong>Year Level / Section:</strong> ${level}</p>
+                    <p><strong>Adviser:</strong> ${adviser}</p>
+                    <p><strong>Year:</strong> ${year}</p>
+                `;
+                container.appendChild(profileCard);
+            }
+        }
+        window.onload = loadXML;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="design.css"?>
+
+	<student>
+		<profile>
+			<name>Kurt Benedict Peña</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>Peña, Kurt Benedict F..jpg</picture>
+		</profile>
+		<profile>
+			<name>Jhoanna Christine Robles</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>https://i.pinimg.com/736x/33/97/b5/3397b5d27783376734e868e3979bd60c.jpg</picture>
+		</profile>
+		<profile>
+			<name>Maraiah Queen Arceta</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>https://i.pinimg.com/originals/8a/2b/b7/8a2bb704aa0ec65b6cb46d720ce6507c.jpg</picture>
+		</profile>
+		<profile>
+			<name>Mary Loi Yves Ricalde</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>https://i.pinimg.com/736x/bf/90/96/bf9096b747339faa0cbc6c470881dff5.jpg</picture>
+		</profile>
+		<profile>
+			<name>An Yu-jin</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>https://i.pinimg.com/736x/5d/b4/31/5db431a54452dbcbdb20ba40821e3ac5.jpg</picture>
+		</profile>
+		<profile>
+			<name>Kim Ga-eul</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>https://image.kpopmap.com/2021/11/IVE-GaEul-082322.jpg</picture>
+		</profile>
+		<profile>
+			<name>Lee Hyun-seo</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>https://e0.pxfuel.com/wallpapers/954/74/desktop-wallpaper-leeseo-kpop-ive.jpg</picture>
+		</profile>
+		<profile>
+			<name>Kim Ji-won</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>https://i.pinimg.com/originals/5d/2a/f3/5d2af34cb91cd04f7fec7cddbbc49bd3.jpg</picture>
+		</profile>
+		<profile>
+			<name>Jang Won-young</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>https://i.pinimg.com/736x/ec/8a/4b/ec8a4b9e495478593fd5fbd777b1d8c1.jpg</picture>
+		</profile>
+		<profile>
+			<name>Naoi Rei</name>
+			<course>BSIT</course>
+			<level>3B-G1</level>
+			<adviser>Ms. Reyes</adviser>
+			<year>2024-2025</year>
+			<picture>https://i.pinimg.com/originals/f0/8b/63/f08b63ce18fa74061d32a67e68be08aa.jpg</picture>
+		</profile>
+	</student>
